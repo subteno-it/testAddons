@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--
+    Copyright 2025 Subteno (https://www.subteno.com).
+    License LGPL-3.0 or later (https://www.gnu.org/licenses/lgpl).
+-->
+<odoo>
+    <record id="view_users_form_simple_modif_mail_custom" model="ir.ui.view">
+        <field name="name">res.users.preferences.form.mail.custom</field>
+        <field name="model">res.users</field>
+        <field name="inherit_id" ref="mail.view_users_form_simple_modif_mail"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='notification_type']" position="after">
+                <field name="has_automatic_clear_on_click" invisible="notification_type != 'inbox'"/>
+            </xpath>
+        </field>
+    </record>
+</odoo>

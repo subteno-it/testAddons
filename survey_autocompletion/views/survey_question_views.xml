@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Copyright 2025 Subteno (https://www.subteno.com)
+    License LGPL-3.0 or later (http://www.gnu.org/licenses/lgpl).
+-->
+<odoo>
+    <data>
+        <record id="survey_question_form_inherit" model="ir.ui.view">
+            <field name="name">survey.question.form.inherit</field>
+            <field name="model">survey.question</field>
+            <field name="inherit_id" ref="survey.survey_question_form" />
+            <field name="arch" type="xml">
+                <xpath expr="//page[@name='options']" position="inside">
+                    <group>
+                        <group string="Reference" invisible="question_type not in ['char_box', 'numerical_box']">
+                            <field name="reference_model" invisible="1" />
+                            <field name="is_used_for_reference" />
+                            <field name="reference_model_id" invisible="not is_used_for_reference" required="is_used_for_reference" />
+                            <field name="reference_field_id" invisible="not is_used_for_reference" required="is_used_for_reference" />
+                            <field name="category_id" invisible="not is_used_for_reference or reference_model != 'res.partner'" />
+                        </group>
+                        <group string="Autocompletion">
+                            <field name="is_autocompleted" />
+                            <field name="autocompleted_model_id" invisible="1" />
+                            <field name="autocompleted_question_id" invisible="not is_autocompleted" required="is_autocompleted" />
+                            <field name="autocompleted_field_id" invisible="not is_autocompleted" required="is_autocompleted" />
+                        </group>
+                    </group>
+                </xpath>
+            </field>
+        </record>
+    </data>
+</odoo>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    Copyright 2024 Subteno (https://www.subteno.com)
+    License LGPL-3.0 or later (http://www.gnu.org/licenses/lgpl).
+-->
+<templates xml:space="preserve">
+
+    <t t-name="productListPreselect">
+        <h4 class="mt-4 mb-3" t-if="this.props.areProductsOptional">Add optional products</h4>
+        <table class="o_sale_product_configurator_table table table-sm position-relative mb-0" t-att-class="{'o_sale_product_configurator_table_optional': this.props.areProductsOptional}" style="border: transparent;">
+            <tbody class="border-top-0">
+                <tr t-foreach="this.props.products" t-as="product" t-key="product.product_tmpl_id">
+                    <ProductPreselect t-props="product" optional="this.props.areProductsOptional"/>
+                </tr>
+            </tbody>
+        </table>
+    </t>
+
+</templates>

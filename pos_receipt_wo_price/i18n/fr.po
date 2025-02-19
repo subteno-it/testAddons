@@ -1,0 +1,101 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* pos_receipt_wo_price
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 15.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-05-19 17:33+0000\n"
+"PO-Revision-Date: 2022-05-19 19:34+0200\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+"X-Generator: Poedit 3.0.1\n"
+
+#. module: pos_receipt_wo_price
+#: model_terms:ir.ui.view,arch_db:pos_receipt_wo_price.pos_config_view_form_custom
+msgid "Add a button to print tickets without price in the point of sale."
+msgstr ""
+"Ajouter un bouton pour imprimer des tickets sans prix dans le point de "
+"vente."
+
+#. module: pos_receipt_wo_price
+#: model:ir.model.fields,field_description:pos_receipt_wo_price.field_pos_config__allow_receipts_without_price
+msgid "Allow receipts without price"
+msgstr "Autoriser les tickets sans prix"
+
+#. module: pos_receipt_wo_price
+#. openerp-web
+#: code:addons/pos_receipt_wo_price/static/src/xml/Screens/TicketScreen/ReprintReceiptScreenWithoutPrice.xml:0
+#, python-format
+msgid "Back"
+msgstr "Retour"
+
+#. module: pos_receipt_wo_price
+#. openerp-web
+#: code:addons/pos_receipt_wo_price/static/src/xml/Screens/ReceiptScreen/OrderReceiptWithoutPrice.xml:0
+#, python-format
+msgid "Logo"
+msgstr "Logo"
+
+#. module: pos_receipt_wo_price
+#: model:ir.model,name:pos_receipt_wo_price.model_pos_config
+msgid "Point of Sale Configuration"
+msgstr "Paramétrage du point de vente"
+
+#. module: pos_receipt_wo_price
+#. openerp-web
+#: code:addons/pos_receipt_wo_price/static/src/xml/Screens/ReceiptScreen/ReceiptScreen.xml:0
+#: code:addons/pos_receipt_wo_price/static/src/xml/Screens/ReceiptScreen/ReprintReceiptButtonWithoutPrice.xml:0
+#: code:addons/pos_receipt_wo_price/static/src/xml/Screens/TicketScreen/ReprintReceiptScreenWithoutPrice.xml:0
+#, python-format
+msgid "Print Receipt Without Price"
+msgstr "Imprimer le ticket sans prix"
+
+#. module: pos_receipt_wo_price
+#. openerp-web
+#: code:addons/pos_receipt_wo_price/static/src/xml/Screens/PaymentScreen/PaymentScreen.xml:0
+#, python-format
+msgid "Receipt without price"
+msgstr "Ticket sans prix"
+
+#. module: pos_receipt_wo_price
+#. openerp-web
+#: code:addons/pos_receipt_wo_price/static/src/xml/Screens/ReceiptScreen/OrderReceiptWithoutPrice.xml:0
+#, python-format
+msgid "SN"
+msgstr "SN"
+
+#. module: pos_receipt_wo_price
+#. openerp-web
+#: code:addons/pos_receipt_wo_price/static/src/xml/Screens/ReceiptScreen/OrderReceiptWithoutPrice.xml:0
+#, python-format
+msgid "Served by"
+msgstr "Servi par"
+
+#. module: pos_receipt_wo_price
+#. openerp-web
+#: code:addons/pos_receipt_wo_price/static/src/xml/Screens/ReceiptScreen/OrderReceiptWithoutPrice.xml:0
+#, python-format
+msgid "Tel:"
+msgstr "Tél :"
+
+#. module: pos_receipt_wo_price
+#: model:ir.model.fields,help:pos_receipt_wo_price.field_pos_config__allow_receipts_without_price
+msgid ""
+"This feature adds a new button in the PoS to create receipts without price."
+msgstr ""
+"Cette fonctionnalité ajoute un nouveau bouton dans le PdV pour créer des "
+"tickets sans prix."
+
+#. module: pos_receipt_wo_price
+#. openerp-web
+#: code:addons/pos_receipt_wo_price/static/src/xml/Screens/ReceiptScreen/ReceiptScreen.xml:0
+#, python-format
+msgid "receipt-with-price"
+msgstr "receipt-with-price"

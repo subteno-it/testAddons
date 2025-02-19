@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    Copyright 2024 Subteno (https://www.subteno.com)
+    License LGPL-3.0 or later (http://www.gnu.org/licenses/lgpl).
+-->
+<templates xml:space="preserve">
+
+    <t t-name="ProductMatrixPreselectDialog">
+        <Dialog size="size" title="title">
+            <ProductListPreselect t-if="this.state.products.length" products="this.state.products"/>
+            <t t-set-slot="footer">
+                <button
+                    class="btn btn-primary"
+                    t-on-click="onConfirm"
+                    t-att-disabled="!isPossibleConfiguration()">
+                    Confirm
+                </button>
+                <button class="btn btn-secondary" t-on-click="onDiscard">
+                    Cancel
+                </button>
+            </t>
+        </Dialog>
+    </t>
+
+</templates>

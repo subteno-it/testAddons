@@ -1,0 +1,166 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* survey_autocompletion
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 16.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-03-13 13:13+0000\n"
+"PO-Revision-Date: 2024-03-13 14:14+0100\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Generator: Poedit 3.4\n"
+
+#. module: survey_autocompletion
+#. odoo-python
+#: code:addons/survey_autocompletion/models/survey_question.py:0
+#, python-format
+msgid "A question cannot be a reference and autocompleted. (Not Implemented)"
+msgstr ""
+"Une question ne peut pas être à la fois une référence et auto-compléter. "
+"(Pas Implémenté)"
+
+#. module: survey_autocompletion
+#: model:ir.model.fields,field_description:survey_autocompletion.field_survey_question__is_autocompleted
+msgid "Autocompleted ?"
+msgstr "Auto-compléter ?"
+
+#. module: survey_autocompletion
+#: model_terms:ir.ui.view,arch_db:survey_autocompletion.survey_question_form_inherit
+msgid "Autocompletion"
+msgstr "Auto-complétion"
+
+#. module: survey_autocompletion
+#: model:ir.model.fields,field_description:survey_autocompletion.field_survey_question__autocompleted_field_id
+msgid "Field for autocomplete"
+msgstr "Champ pour l'auto-complétion"
+
+#. module: survey_autocompletion
+#: model:ir.model.fields,help:survey_autocompletion.field_survey_question__category_id
+msgid "Field used to filter partner if reference model is res.partner"
+msgstr ""
+"Champ utilisé pour filtrer le partenaire si le modèle de référence est res."
+"partner"
+
+#. module: survey_autocompletion
+#: model:ir.model.fields,help:survey_autocompletion.field_survey_question__is_autocompleted
+msgid "Indicates whether the survey question is set for autocompletion."
+msgstr ""
+"Indique si la question du sondage est configurée pour l'auto-complétion."
+
+#. module: survey_autocompletion
+#: model:ir.model.fields,help:survey_autocompletion.field_survey_question__is_used_for_reference
+msgid "Indicates whether the survey question is used as a reference."
+msgstr "Indique si la question du sondage est utilisée comme référence."
+
+#. module: survey_autocompletion
+#: model:ir.model.fields,help:survey_autocompletion.field_survey_question__reference_model
+msgid "Model name of the reference model."
+msgstr "Nom du modèle de référence."
+
+#. module: survey_autocompletion
+#: model:ir.model.fields,field_description:survey_autocompletion.field_survey_question__category_id
+msgid "Partner Category"
+msgstr "Catégorie de partenaire"
+
+#. module: survey_autocompletion
+#: model_terms:ir.ui.view,arch_db:survey_autocompletion.survey_question_form_inherit
+msgid "Reference"
+msgstr "Référence"
+
+#. module: survey_autocompletion
+#: model:ir.model.fields,field_description:survey_autocompletion.field_survey_question__reference_field_id
+msgid "Reference Field"
+msgstr "Champ de référence"
+
+#. module: survey_autocompletion
+#: model:ir.model.fields,field_description:survey_autocompletion.field_survey_question__reference_model_id
+msgid "Reference Model"
+msgstr "Modèle de référence"
+
+#. module: survey_autocompletion
+#: model:ir.model.fields,field_description:survey_autocompletion.field_survey_question__reference_model
+msgid "Reference Model Name"
+msgstr "Référence Nom du modèle"
+
+#. module: survey_autocompletion
+#: model:ir.model.fields,field_description:survey_autocompletion.field_survey_question__autocompleted_question_id
+msgid "Reference Question"
+msgstr "Question de référence"
+
+#. module: survey_autocompletion
+#: model:ir.model.fields,field_description:survey_autocompletion.field_survey_question__autocompleted_model_id
+msgid "Reference Question Model"
+msgstr "Modèle de question de référence"
+
+#. module: survey_autocompletion
+#: model:ir.model.fields,help:survey_autocompletion.field_survey_question__reference_field_id
+msgid ""
+"Specifies the field in the reference model to which the survey question is "
+"referring."
+msgstr ""
+"Spécifie le champ dans le modèle de référence auquel la question du sondage "
+"fait référence."
+
+#. module: survey_autocompletion
+#: model:ir.model.fields,help:survey_autocompletion.field_survey_question__autocompleted_field_id
+msgid "Specifies the field in the reference model used for autocompletion."
+msgstr ""
+"Spécifie le champ dans le modèle de référence utilisé pour l'auto-"
+"complétion."
+
+#. module: survey_autocompletion
+#: model:ir.model.fields,help:survey_autocompletion.field_survey_question__reference_model_id
+msgid "Specifies the model to which the survey question is referring."
+msgstr "Spécifie le modèle auquel la question du sondage fait référence."
+
+#. module: survey_autocompletion
+#: model:ir.model.fields,help:survey_autocompletion.field_survey_question__autocompleted_question_id
+msgid "Specifies the reference question to be used for autocompletion."
+msgstr "Spécifie la question de référence à utiliser pour l'auto-complétion."
+
+#. module: survey_autocompletion
+#: model:ir.model,name:survey_autocompletion.model_survey_question
+msgid "Survey Question"
+msgstr "Question du sondage"
+
+#. module: survey_autocompletion
+#: model:ir.model.fields,help:survey_autocompletion.field_survey_question__autocompleted_model_id
+msgid ""
+"Technical field: Provides a relation to the model of the reference question "
+"used for autocompletion."
+msgstr ""
+"Champ technique: Fournit une relation avec le modèle de la question de "
+"référence utilisée pour l'auto-complétion."
+
+#. module: survey_autocompletion
+#: model:ir.model.fields,field_description:survey_autocompletion.field_survey_question__is_used_for_reference
+msgid "Used as Reference ?"
+msgstr "Utilisé en tant que référence ?"
+
+#. module: survey_autocompletion
+#. odoo-javascript
+#: code:addons/survey_autocompletion/static/src/js/survey_form.js:0
+#, python-format
+msgid "or press CTRL+Enter"
+msgstr "ou appuyez CTRL+Entrée"
+
+#. module: survey_autocompletion
+#. odoo-javascript
+#: code:addons/survey_autocompletion/static/src/js/survey_form.js:0
+#, python-format
+msgid "or press Enter"
+msgstr "ou appuyez sur Entrée"
+
+#. module: survey_autocompletion
+#. odoo-javascript
+#: code:addons/survey_autocompletion/static/src/js/survey_form.js:0
+#, python-format
+msgid "or press ⌘+Enter"
+msgstr "ou appuyez ⌘+Entrée"

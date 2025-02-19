@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Copyright 2025 Subteno (https://www.subteno.com)
+    License LGPL-3.0 or later (http://www.gnu.org/licenses/lgpl).
+-->
+<odoo>
+    <data>
+        <template id="question_char_box_inherit" inherit_id="survey.question_char_box">
+            <xpath expr="//input" position="attributes">
+                <attribute name="t-att-data-autocomplete">question.is_used_for_reference</attribute>
+            </xpath>
+        </template>
+    </data>
+</odoo>

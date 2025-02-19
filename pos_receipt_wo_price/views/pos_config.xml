@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--
+    Copyright 2022 Subteno (https://www.subteno.com).
+    License LGPL-3.0 or later (http://www.gnu.org/licenses/lgpl).
+-->
+<odoo>
+    <record id="pos_config_view_form_custom" model="ir.ui.view">
+        <field name="name">pos.config.form.view.custom</field>
+        <field name="model">pos.config</field>
+        <field name="inherit_id" ref="point_of_sale.pos_config_view_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//div[@id='iface_invoicing']" position="after">
+                <div class="col-12 col-lg-6 o_setting_box" id="no_price_ticket">
+                    <div class="o_setting_left_pane">
+                        <field name="allow_receipts_without_price"/>
+                    </div>
+
+                    <div class="o_setting_right_pane">
+                        <label for="allow_receipts_without_price"/>
+                        <div class="text-muted">
+                            Add a button to print tickets without price in the point of sale.
+                        </div>
+                    </div>
+                </div>
+            </xpath>
+        </field>
+    </record>
+</odoo>

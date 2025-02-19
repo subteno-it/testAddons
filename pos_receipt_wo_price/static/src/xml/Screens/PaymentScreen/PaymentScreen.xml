@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    Copyright 2022 Subteno (https://www.subteno.com).
+    License LGPL-3.0 or later (http://www.gnu.org/licenses/lgpl).
+-->
+<templates id="template" xml:space="preserve">
+    <t t-name="pos_receipt_wo_price.PaymentScreenCustom"
+       t-inherit="point_of_sale.PaymentScreen"
+       t-inherit-mode="extension"
+       owl="1">
+        <xpath expr="//div[hasclass('button', 'js_invoice')]" position="before">
+            <div t-if="env.pos.config.allow_receipts_without_price" class="button ticket_without_price"
+                t-att-class="{ highlight: currentOrder.is_with_ticket_without_price() }"
+                t-on-click="toggleIsWithTicketWithoutPrice">
+                <i class="fa fa-print" /> Receipt without price
+            </div>
+        </xpath>
+    </t>
+</templates>
